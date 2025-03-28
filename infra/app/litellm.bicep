@@ -169,6 +169,10 @@ resource containerApp 'Microsoft.App/containerApps@2024-03-01' = {
         {
           name: containerName
           image: fetchLatestContainerImage.outputs.?containers[?0].?image ?? 'mcr.microsoft.com/azuredocs/containerapps-helloworld:latest'
+          resources: {
+            cpu: json('0.5')
+            memory: '1Gi'
+          }
           env: [
             {
               name: 'LITELLM_MASTER_KEY'

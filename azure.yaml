@@ -20,6 +20,3 @@ services:
     docker:
       context: ./
       path: DOCKERFILE
-    resources:
-      cpu: 0.5
-      memory: 1Gi
