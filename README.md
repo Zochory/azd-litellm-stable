@@ -13,7 +13,7 @@ To use this template, follow these steps using the [Azure Developer CLI](https:/
 2. Initialize this template using `azd init`:
 
     ```bash
-    azd init --template build5nines/azd-litellm
+    azd init --template zochory/azd-litellm
     ```
 
 3. Use `azd up` to provision your Azure infrastructure and deploy the web application to Azure.
