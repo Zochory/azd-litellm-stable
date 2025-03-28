@@ -13,7 +13,7 @@ infra:
       value: 1
 
 services:
-  litellm:
+  api:
     project: ./src/litellm
     host: containerapp
     language: python
